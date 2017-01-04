@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package demo;
+
+service Demo {
+  rpc Hi(HiRequest) returns (HiResponse) {}
+  rpc Hello(HelloRequest) returns (HelloResponse) {}
+}
+
+message HiRequest {
+  string message = 1;
+}
+
+message HiResponse {
+  string message = 1;
+}
+
+
+message HelloRequest {
+  string message = 1;
+}
+
+message HelloResponse {
+  string message = 1;
+}
